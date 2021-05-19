@@ -41,6 +41,7 @@ function pairs(names) {
   if (!names || names === []) {
     return []
   }
+<<<<<<< HEAD
   while(names.length){
     let pair = []
     let randomA = names.getRandom()
@@ -53,11 +54,14 @@ function pairs(names) {
     }
     newNames.push(pair)
     }
+=======
+  
+ 
+>>>>>>> 6abbb5edf019794096c269a29847b9b1cf9d2b84
 console.log(names.getRandom())
 
-
   // Your code goes here
-}
+
 
 module.exports = pairs;
 
