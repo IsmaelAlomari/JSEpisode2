@@ -37,6 +37,15 @@ Array.prototype.getRandom = function () {
 };
 
 function pairs(names) {
+
+  if (!names || names === []) {
+    return []
+  }
+ 
+  
+console.log(names.getRandom())
+
+
   // Your code goes here
 }
 
