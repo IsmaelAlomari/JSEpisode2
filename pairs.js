@@ -41,10 +41,18 @@ function pairs(names) {
   if (!names || names === []) {
     return []
   }
- let newNames = []
-  while (names.length) {
-    newNames.push(names.pop())
-  }
+  while(names.length){
+    let pair = []
+    let randomA = names.getRandom()
+    pair.push(randomA)
+    names.delete(randomA)
+    if (names.length) {
+    let randomB = names.getRandom()
+    pair.push(randomB)
+    names.delete(randomB)
+    }
+    newNames.push(pair)
+    }
 console.log(names.getRandom())
 
 
